@@ -42,7 +42,7 @@ const Footer = () => {
             color: 'gray',
           }}
         >
-          &copy; 2023 MoviesHub Developed by{'Sachin Upadhyay '}
+          &copy; 2023 MoviesHub Developed by{' '}
           <a
             style={{
               textDecoration: 'none',
@@ -52,7 +52,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Gilbert Hutapea
+            Sachin upadhyay
           </a>
         </Typography>
       </Paper>
