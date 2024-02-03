@@ -42,7 +42,7 @@ const Footer = () => {
             color: 'gray',
           }}
         >
-          &copy; 2022 BertFlix Developed by{' '}
+          &copy; 2023 MoviesHub Developed by{'Sachin Upadhyay '}
           <a
             style={{
               textDecoration: 'none',
