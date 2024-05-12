@@ -48,7 +48,7 @@ const Footer = () => {
               textDecoration: 'none',
               color: theme.palette.primary.main
             }}
-            href="https://berthutapea.vercel.app/"
+            href="https://portfoliosachinkumar.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
