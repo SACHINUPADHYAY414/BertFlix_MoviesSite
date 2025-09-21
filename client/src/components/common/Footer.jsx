@@ -42,7 +42,7 @@ const Footer = () => {
             color: 'gray',
           }}
         >
-          &copy; 2023 MoviesHub Developed by{' '}
+          &copy; 2023 FilmBuzz Developed by{' '}
           <a
             style={{
               textDecoration: 'none',
