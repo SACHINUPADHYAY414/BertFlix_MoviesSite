@@ -1,133 +1,164 @@
-<H1 align ="center" > MoviesHub(MERN MOVIE)  </h1>
-<h5  align ="center"> 
-Fullstack open source movie application made with MongoDB, Express, React & Nodejs (MERN) </h5>
-<br/>
+# <h1 align="center">🎬 Filmbuzz (MERN MOVIE APP) 🎬</h1>
 
-  * [Configuration and Setup](#configuration-and-setup)
-  * [Key Features](#key-features)
-  * [Technologies used](#technologies-used)
-      - [Frontend](#frontend)
-      - [Backend](#backend)
-      - [Database](#database)
-      - [API](#api)
-  * [📸 Screenshots](#screenshots)
-  * [Author](#author)
-  * [License](#license)
+<h5 align="center">
+Fullstack open-source movie application built with MongoDB, Express, React & Node.js (MERN)
+</h5>
 
-## Configuration and Setup
+---
 
-In order to run this project locally, simply fork and clone the repository or download as zip and unzip on your machine.
+## 🚀 Table of Contents
 
-- Open the project in your prefered code editor.
-- Go to terminal -> New terminal (If you are using VS code)
-- Split your terminal into two (run the client on one terminal and the server on the other terminal)
+- [Configuration & Setup](#configuration--setup)
+- [Key Features](#key-features)
+- [Technologies Used](#technologies-used)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
+  - [Database](#database)
+  - [API](#api)
+- [📸 Screenshots](#screenshots)
+- [Author](#author)
+- [License](#license)
 
-In the first terminal
+---
 
-```
-$ cd client
-$ npm install (to install client-side dependencies)
-$ npm run  start (to start the client)
-```
+## ⚙️ Configuration & Setup
 
-In the second terminal
+To run this project locally:
 
-- cd server and Set environment variables in .env
-- Create your mongoDB connection url, which you'll use as your MONGO_URL
-- Supply the following credentials
+1. **Fork** and **clone** this repository or download the ZIP and unzip on your machine.  
+2. Open the project in your preferred code editor (like VS Code).  
+3. Open two terminals (split terminal recommended): one for client, one for server.
 
-```
-#  --- .env  ---
+### Client Setup (Terminal 1)
 
-MONGODB_URL
-PORT =5000
-TOKEN_SECRET=
-TMDB_BASE_URL=
-TMDB_KEY=
-```
+```bash
+cd client
 
-```
-# --- Terminal ---
+Server Setup (Terminal 2)
+Navigate to the server folder:
+cd server
+Create a .env file with the following variables:
 
-$ npm install (to install server-side dependencies)
-$ npm start (to start the server)
-```
+MONGODB_URL=<Your MongoDB connection string>
+PORT=5000
+TOKEN_SECRET=<Your JWT secret>
+TMDB_BASE_URL=<TMDB API base URL>
+TMDB_KEY=<Your TMDB API key>
+Install dependencies and start server:
 
-##  Key Features
+npm install      # Install backend dependencies
+npm start        # Start Express server
+✨ Key Features
 
-- User registration and login
-- Authentication using JWT Tokens
-- Add Favorites
-- Delete Favorites
-- Leave a Reviews
-- Delete Reviews
-- Password Update
-- Search Live
-- Watch the trailer on Youtube
-- 404 Page and many more
-- Skeleton loading effect
-- DarkMode
-- Responsive Design
+User registration & login with secure JWT authentication
 
-<br/>
+Add/Delete favorites
 
-##  Technologies used
+Leave/Delete movie reviews
 
-This project was created using the following technologies.
+Password update functionality
 
-####  Frontend 
+Live search with instant results
 
-- [React js ](https://www.npmjs.com/package/react) - JavaScript library that is used for building user interfaces specifically for single-page applications
-- [React Hooks  ](https://reactjs.org/docs/hooks-intro.html) - For managing and centralizing application state
-- [react-router-dom](https://www.npmjs.com/package/react-router-dom) - To handle routing
-- [axios](https://www.npmjs.com/package/axios) - For making Api calls
-- [Material UI](https://mui.com/) - For User Interface
-- [CK-Editor](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/frameworks/react.html) - Rich Text Editor 
-- [Formik](https://formik.org/) - Manage status and validation of data on forms efficiently
-- [React Redux](https://react-redux.js.org/) - manage application state efficiently and provide a more structured mechanism for managing data
-- [React Toastify](https://www.npmjs.com/package/react-toastify) - To display interactive and responsive notifications (toasts) in web applications
-- [Swiper](https://swiperjs.com/) - To create responsive and interactive sliders or carousels on web pages
+Watch trailers on YouTube
 
-####  Backend 
+Responsive 404 page
 
-- [Node js](https://nodejs.org/en/) -A runtime environment to help build fast server applications using JS
-- [Express js](https://www.npmjs.com/package/express) -The server for handling and routing HTTP requests
-- [Mongoose](https://mongoosejs.com/) - For modeling and mapping MongoDB data to JavaScript
-- [axios](https://www.npmjs.com/package/axios) - For making Api calls
-- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) - For authentication
-- [cookie-parser](https://www.npmjs.com/package/cookie-parser) - Middleware module used in Node.js web applications to manage cookies
-- [cors](https://www.npmjs.com/package/cors) - Provides a Connect/Express middleware
-- [Dotenv](https://www.npmjs.com/package/dotenv) - Zero Dependency module that loads environment variables
-- [express-validator](https://www.npmjs.com/package/express-validator) - Used in Node.js applications with the Express framework to validate data submitted by users (user input)
-- [nodemon](https://nodemon.io/) - Development utility for Node.js applications. Node.js is a runtime platform that allows you to run JavaScript on the server side.t
+Beautiful skeleton loading effects
 
-####  Database 
+Dark mode support
 
- - [MongoDB ](https://www.mongodb.com/) - It provides a free cloud service to store MongoDB collections.
- 
-####  Api 
+Fully responsive design for all screen sizes
 
- - [TMDB API](https://developer.themoviedb.org/docs) - An application programming interface that provides access to a database of movies, television shows, and related information from The Movie Database platform.
- 
-## License
+🛠 Technologies Used
+Frontend
 
-MIT License
+React.js
+ – Fast and responsive UI
 
-Copyright (c) 2023 Sachin upadhyay
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+React Hooks – Manage component state effectively
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+React Router DOM
+ – Client-side routing
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Axios
+ – API calls
+
+Material UI
+ – Modern UI components
+
+CKEditor
+ – Rich text editing
+
+Formik
+ – Form state management & validation
+
+React Redux
+ – Global state management
+
+React Toastify
+ – Notifications
+
+Swiper
+ – Touch-friendly sliders/carousels
+
+Backend
+
+Node.js
+ – JavaScript runtime
+
+Express.js
+ – Web server & routing
+
+Mongoose
+ – MongoDB object modeling
+
+Axios – Server-side API calls
+
+jsonwebtoken
+ – Secure authentication
+
+cookie-parser
+ – Cookie management
+
+cors
+ – Cross-Origin Resource Sharing
+
+dotenv
+ – Environment variable management
+
+express-validator
+ – Data validation
+
+nodemon
+ – Auto-restarting server during development
+
+Database
+
+MongoDB Atlas
+ – Cloud-hosted NoSQL database
+
+API
+
+TMDB API
+ – Movie & TV show data
+
+📸 Screenshots
+
+(Add your project screenshots here to showcase the UI and features)
+
+👤 Author
+
+Sachin Upadhyay
+
+Open-source enthusiast & MERN stack developer
+
+📄 License
+
+This project is licensed under the MIT License — see the LICENSE
+ file for details.
+Made with ❤️ using MERN stack technologies.
+
+
+npm install      # Install client dependencies
+npm start        # Start React frontend
