@@ -1,3 +1,3 @@
-# BertFlix (MERN-MOVIE)
+# FilmBuzz (MERN-MOVIE)
 
 Fronted (Client)
